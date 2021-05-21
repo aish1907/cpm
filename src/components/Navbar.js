@@ -1,11 +1,11 @@
 import React from "react";
 
-const Navbar = ({ account }) => {
+const Navbar = (props) => {
   return (
     <nav className="navbar navbar-dark bg-dark shadow mb-5">
       <p className="navbar-brand my-auto">Prediction Market</p>
       <ul className="navbar-nav">
-        <li className="nav-item text-white">{account}</li>
+        <li className="nav-item text-white">{props.account}</li>
       </ul>
     </nav>
   );
